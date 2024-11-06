@@ -1,0 +1,8 @@
+[Unit]
+Description=Monitor sound device changes
+
+[Path]
+PathChanged=/dev/snd
+
+[Install]
+WantedBy=default.target

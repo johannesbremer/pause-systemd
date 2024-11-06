@@ -1,0 +1,7 @@
+[Unit]
+Description=Pause playerctl when sound device changes
+After=sound.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/playerctl pause
