@@ -5,15 +5,16 @@ When using wireless headphones on Linux, it's common for media playback to conti
 This simple systemd service brings that expected behavior to Linux: it pauses media playback when your Bluetooth headphones disconnect, providing a more intuitive experience.
 
 ### Step 1: Save the Files
-Place the two files in the following directory:
-
+Copy these two files into the following directory:
 ```
-~/.config/systemd/user/
+cp playerctl-pause.path ~/.config/systemd/user/playerctl-pause.path
+```
+```
+cp playerctl-pause.service ~/.config/systemd/user/playerctl-pause.service
 ```
 
 ### Step 2: Reload the Systemd Daemon
 Run the following command to reload the systemd configuration:
-
 ```
 systemctl --user daemon-reload
 ```
