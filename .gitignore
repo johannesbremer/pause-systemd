@@ -1,0 +1,4 @@
+*
+!playerctl-pause.path
+!playerctl-pause.service
+!.gitignore
