@@ -1,5 +1,7 @@
 [Unit]
 Description=Monitor sound device changes
+StartLimitIntervalSec=60
+StartLimitBurst=5
 
 [Path]
 PathChanged=/dev/snd
