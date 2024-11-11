@@ -4,6 +4,13 @@ When using wireless headphones on Linux, it's common for media playback to conti
 
 This simple systemd service brings that expected behavior to Linux: it pauses media playback when your Bluetooth headphones disconnect, providing a more intuitive experience.
 
+### Step 0: Ensure Playerctl Is Installed
+To check if Playerctl is installed, run the following command:
+```
+playerctl --version
+```
+If the output does not display a version number, such as `v2.4.1`, you’ll need to install Playerctl. You can do so using your distro's package manager.
+
 ### Step 1: Save the Files
 Copy these two files into the following directory:
 ```
