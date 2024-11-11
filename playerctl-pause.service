@@ -1,6 +1,7 @@
 [Unit]
 Description=Pause playerctl when sound device changes
-After=sound.target pipewire.service
+Requires=sound.target
+After=sound.target pipewire.service pulseaudio.service
 
 [Service]
 Type=oneshot
