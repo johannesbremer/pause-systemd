@@ -5,4 +5,4 @@ After=sound.target pipewire.service pulseaudio.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/playerctl pause
+ExecStart=/usr/bin/playerctl pause --all-players
